@@ -110,7 +110,8 @@ class MyGame extends Phaser.Scene
         // adiciona musica de fundo
         if (this.sound.context.state === 'suspended')
             this.sound.context.resume();
-        this.backgroundMusic = this.sound.add('music',{loop:true,volume:0.6});
+        this.backgroundMusic = this.sound.add('music',{loop:true,volume:0.6
+        });
         this.backgroundMusic.play(); // toca a musica
         
         const camera = this.cameras.main;
