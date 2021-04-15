@@ -183,8 +183,8 @@ class MyGame extends Phaser.Scene
 const config = {
     type: Phaser.AUTO,
     parent: 'phaser-example',
-    width: 550,
-    height: 550,
+    width: 650,
+    height: 650,
     physics: {
         default: 'arcade',
         arcade: {
