@@ -108,11 +108,11 @@ class MyGame extends Phaser.Scene
         
         
         // adiciona musica de fundo
-        if (this.sound.context.state === 'suspended')
-            this.sound.context.resume();
-        this.backgroundMusic = this.sound.add('music',{loop:true,volume:0.6
-        });
-        this.backgroundMusic.play(); // toca a musica
+        // if (this.sound.context.state === 'suspended')
+        //     this.sound.context.resume();
+        // this.backgroundMusic = this.sound.add('music',{loop:true,volume:0.6
+        // });
+        // this.backgroundMusic.play(); // toca a musica
         
         const camera = this.cameras.main;
         camera.startFollow(this.player);
@@ -183,8 +183,8 @@ class MyGame extends Phaser.Scene
 const config = {
     type: Phaser.AUTO,
     parent: 'phaser-example',
-    width: 650,
-    height: 650,
+    width: 550,
+    height: 550,
     physics: {
         default: 'arcade',
         arcade: {
